@@ -1,0 +1,226 @@
+//========== Root mixins
+//=====BEM mixin
+e(name)
+	&__{name}
+		{block}
+m(name)
+	&--{name}
+		{block}
+
+//======Golden Ratio Mixin
+golden()
+	if @width
+		height: @width * .618
+	else
+		if @height
+			width: @height * .618
+	if @font-size
+		line-height: @font-size * 1.618
+		width: @line-height * @line-height
+
+//========== root values
+phi = 1.618
+fi = .618
+golden = 1.61803398875
+
+rootPx = 16px
+rootEm = 1rem
+rootPercent = 100%
+rootPt = pxToPt(rootPx)
+
+fontRem()
+	font-size: rootPx
+	font-size: 1rem
+
+
+//========== font functions
+hifi()
+	unit(phi, 'em')
+lofi()
+	unit(fi, 'em')
+rem(n)
+	rootEm * n
+
+pxToPt(n)
+	unit(.75 * n,pt)
+
+ptToPx(n)
+	ceil(unit(n * 1.333333333,px))
+
+ptToEm(n)
+	unit(ptToPx(n) / rootPx,em)
+
+emToPx(n)
+	unit(n * 16,px)
+
+pxToEm(n)
+	unit(n/rootEm,em)
+
+emToPercent(n)
+	(n/rootEm)%
+
+//========== variables
+//===== fonts
+baseFont = 'Open Sans', sans-serif
+//1px == .75pt
+pt12 = 1em
+pt13 = 1.063em
+pt14 = 1.188em
+pt16 = 1.313em
+pt22 = 1.876em
+pt24 = 2em
+pt36 = 3em
+
+bodyFont = sans-serif
+codeFont = "Courier New", Courier, monospace;
+font-size(arg)
+	if arg == 1em
+		font-size: 1em
+		font-size: 1rem
+	else
+		font-size: arg
+
+
+//===base colors
+htmlBG = rgb(230, 230, 230)
+bodyTxt = rgb(51, 51, 51)
+txtLink = #00a1de
+txtLinkHover = #0071b8
+
+//=== base font
+bodyFont = 'Open Sans', sans-serif
+
+//=== borders and backgrounds
+bgPromoSliderBlack = lightBlack
+borderInputBlack = lightBlack
+bgButtonBlue = rgb(4, 124, 192)
+borderButtonBlue = rgba(4, 124, 192, 1)
+makeTransparent(theColor)
+	rgba(theColor,.9)
+
+//=== text colors
+
+txtLink = #b10a32
+txtLinkHover = #333
+txtLinkActive = #333
+h1Color = rgba(0, 0, 0, .63)
+h3Color = #556159
+
+//=== form colors
+inputBorder = .125em solid rgba(4, 124, 192, 1)
+inputHoverBorder = rgba(5, 154, 240,1)
+inputBackground = white
+inputColor = liteGray
+inputHoverColor = medGray1
+inputActiveColor = txtBodyBlack
+buttonColor = white
+buttonBorder = .125em solid rgba(4, 124, 192, 1)
+buttonBackground = rgb(4, 124, 192)
+buttonHoverBackground = rgb(5, 154, 240)
+
+
+
+goBackground =  rgb(132, 209, 125)
+goBackgroundInactive = desaturate(goBackground, 40%)
+goBackgroundHover = saturate(goBackground, 20%)
+goColor = #523E31
+
+//=== table colors
+tableBorder = gray
+tableBodyBackground = rgb(240, 245, 235)
+tableRowEven = rgba(240, 245, 235, .9)
+tableRowOdd = rgba(255, 255, 255, .5)
+
+
+//===Unique UI elements
+
+
+//========== Typography
+txtBold = 700
+
+
+//=====CSS3 effects
+borderRadiusSmall = .125em
+borderRadiusLarge = .25em
+txtShadow = 0px 1px 1px rgba(255, 250, 250, .9);
+bodyShadow= 0px 0px 10px rgba(0,0,0,.8);
+headingShadow =  txtShadow
+tableShadow = txtShadow
+
+//========== Effects
+transitionize()
+	transition: all .2s ease-in-out
+
+
+//========== Flex box vars
+vflex()
+	display: flex
+	flex-direction: column
+hflex()
+	display:flex
+	flex-direction:row
+betweenFlex()
+	justify-content: space-between
+	align-items: space-between	
+verticalFlex()
+	vflex()
+	betweenFlex()
+	flex-wrap: wrap
+horizontalFlex()
+	hflex()
+	betweenFlex()
+	flex-wrap: wrap
+
+
+//==========Complex styles
+inset()
+	color: bodyTxt
+	color: h1Color
+	text-shadow: txtShadow
+insetBorder()
+	border: 1px solid rgb(255, 255, 255)
+	border: 1px solid rgba(255, 255, 255, .7)
+	box-shadow: inset 0 1px 3px rgba(120, 120, 120, .9)
+
+headline()
+	letter-spacing: 4px
+	text-transform: uppercase
+	margin: 0
+	
+//=====forms
+input()
+	color: inputColor
+	background: inputBackground
+	border: inputBorder
+	&:hover
+		color: inputHoverColor
+		border-color: inputHoverBorder
+	&:active, &:focus
+		color: inputActiveColor
+button()
+	background: buttonBackground
+	color: buttonColor
+	border: buttonBorder
+	&:hover
+		background: buttonHoverBackground
+		border-color: @background
+
+//==========dimensions
+
+pageWidth() 
+	width: 60em;
+	width: 61.8vw;
+	margin: 0 auto;
+mainWidth()
+	width: ((((.618 * 960)-(16*1.618))/960)*100)%
+	width: unquote('calc(61.8% - 1.618rem)')
+sideWidth()
+	width: ((((.382 * 960)-(16*1.618))/960)*100)%
+	width: unquote('calc(38.2% - 1.618rem)')	
+//==========Animations
+@keyframes fadein
+	0%
+		color: rgba(68, 68, 68, .01)
+	100%
+		color: rgba(68, 68, 68, 1)
+

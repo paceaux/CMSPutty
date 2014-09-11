@@ -1,0 +1,12 @@
+nav
+	li
+		transitionize()
+			&:hover, &:focus, &:active
+				color: #333
+.header
+	+e(nav)
+		background: #43748f
+		.list
+			+e(item)
+				+e(link)
+					background: gray

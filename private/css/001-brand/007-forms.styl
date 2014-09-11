@@ -1,0 +1,32 @@
+fieldBorder = #d1d1d1
+borderHover = #b1b1b1
+borderFocus = #a1a1a1
+input, textarea, select,
+option, button, label, fieldset, legend, [contenteditable="true"]
+	border: none
+	outline: none
+	background: none
+	transitionize()
+
+input, button, textarea, select, option
+	border-radius: 2px
+	border: 1px solid fieldBorder
+
+input, textarea, button
+	background: white
+	color: #444
+	&:hover
+		border-color: borderHover
+	&:focus, &:active
+		border-color: borderFocus
+
+button, .button
+	background: fieldBorder
+	border-radius: .125em
+	font-size: 1em;
+	&:hover
+		background: borderHover
+	&:focus
+		background: borderFocus
+
+		

@@ -1,0 +1,19 @@
+{
+  "name": "CMSPutty",
+  "version": "0.0.1",
+  "description": "An HTML template that fits into any CMS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paceaux/CMSPutty.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Frank M. Taylor",
+  "license": "The MIT License (MIT)"
+}

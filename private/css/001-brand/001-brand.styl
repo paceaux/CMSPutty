@@ -1,0 +1,98 @@
+html
+	font-size: rootEm
+	background:htmlBG
+body
+	color: bodyTxt
+	line-height: phi
+	font-family: baseFont
+	fontRem()
+h1,h2, h3, h4, h5, h6, strong, th, dt
+	font-weight: txtBold
+
+h1, h2
+	font-weight:normal
+h1, .h1
+	color: bodyTxt
+	color: h1Color
+	font-size: hifi()
+	line-height: 1.618
+h2, .h2
+	font-size: 1.2em
+	margin: 0
+h3, .h3
+	font-size: 1.15em
+	color: h3Color
+	margin: 0
+h4, .h4
+	font-size: 1.012em
+	color: h3Color
+h5, .h5
+	color: h3Color
+	margin: .4em 0;
+
+p 
+	+ 
+		h2, h3, h4, h5, h6
+			margin-top:hifi()
+			margin-top: 1.618rem
+
+a
+	color: txtLink
+	transitionize()
+	&:visited
+		text-decoration: none
+	&:hover, &:focus
+		color: txtLinkHover
+	&:active
+		color: txtLinkActive
+nav a
+	text-decoration: none
+	&:hover, &:focus, &:active
+		text-decoration: none
+ol, ul
+	padding: 0 hifi()
+ul li
+	list-style-type: disc
+ol li
+	list-style-type: decimal
+nav ul, nav ol, nav li
+	list-style-type: none
+	text-decoration: none
+	line-height: 1
+	padding: 0
+dt
+	font-size: 1.2em
+	display: inline-block
+dd
+	display: block
+	margin-left: hifi()
+	margin-bottom: lofi()
+blockquote
+	font-style: italic
+	margin: 0 2em
+	quotes: " { " " }"
+	&:before, &::before
+		content: " \0093 ";
+	&:after, &::after
+		content: " \0094 "
+p, li, blockquote
+	line-height: 1.618
+	margin-bottom: .618em
+p, li
+	font-size: 1em
+blockquote
+	font-size:1.1em
+small
+	font-size: .85rem
+
+em
+	font-style: italic
+
+code, style[contenteditable="true"]
+	font-family: codeFont
+sup, sub
+	font-size: .75rem
+sup
+	vertical-align: top
+sub
+	vertical-align: bottom

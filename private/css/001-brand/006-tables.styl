@@ -1,0 +1,39 @@
+table
+	border: 2px solid rgba(86, 86, 86, .9)
+	margin: 1em auto
+	border-spacing: .0625em
+	caption
+		font-size: .75em
+		font-style: italic
+	thead
+		[headers]
+			font-size: .75em
+		th
+			font-size: .75em
+			font-family: headingFont
+			text-shadow: txtShadow
+			tr
+				&:first-child, &:first-child:last-child
+					background: #d1d1d1
+	tbody
+		margin: .5em 0
+		tr
+			&:nth-child(even)
+				background-color: #ddd
+			&:last-child:nth-child(-n+2)
+				background: none
+				border-top: 1px solid #969696
+	tr
+		vertical-align: 3em
+		vertical-align: middle
+	td
+		vertical-align: middle
+		padding: .8em 1em .8em 1em;
+	th
+		font-size: 1.25em
+		vertical-align: middle
+		padding: .55em .618em 0 .618em;
+		&[rowspan]
+			vertical-align: middle
+		&[colspan]
+			text-align: center
