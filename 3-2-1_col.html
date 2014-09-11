@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSSDesk</title>
+    <style type="text/css">
+      
+      body { background-color: #2574b0; }
+      
+      html{
+  font-size: 1em;
+  background: white;
+  line-height: 1;
+  height: 100%;
+  display:block;
+  width: 100%;
+  }
+  
+body{
+  width: 50em;
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px #ccc, -1px 1px 1px #ccc;
+  height: 100%;
+  display:block;
+  }
+header, footer, aside, section, div,nav{
+  margin: 0;
+  padding: 0;
+  display: block;
+  outline: 2px solid black;
+  background: rgba(150, 150, 150, .5);
+
+  }
+  h1, h2, h3, h4, h5, h6, p{margin:0; padding: 0;}
+nav{
+  outline: 2px solid #FFc;
+  }  
+ul, ol{
+  list-style-type: none;
+  } 
+nav li{
+  float:left;
+  margin: 0 1em;
+  outline: 1px solid gray;
+  }  
+body > header{
+  position: absolute;
+  top:0;
+  width: inherit;
+  height: 9em;
+  }  
+  header > hgroup{
+    float:left;
+    }
+    
+    header > nav.utility{
+      float:right;
+      }
+      
+      header > nav.primary{
+        width: 100%;
+        float:left;
+        margin-top: 5em;
+        
+        }
+  
+body > div#page{
+  margin-top:10em;
+  top: 11em;
+  width: inherit;
+  background: #d9d8d7;
+  }  
+  body > footer{
+    height: 6em;
+    width: inherit;
+    display:block;
+    float:left;
+    margin-top: 2em;
+  }
+  
+  section.main{
+    float:right;
+    height: 100%;;
+    width: 100%;
+    }
+    section.side{
+      width: 20%;
+      padding: 2.5%;
+      height: auto;
+      float:left;
+      }
+      div#page.right-col > section.side{
+        float:right;
+        }
+    section.side + section.main{
+      width: 75%;
+      }
+
+    section.main > header, section.main >aside.features, section.main > footer, section.main > article{
+      float:left;
+      padding: 2.5%;
+      width:100%;
+}
+  aside.right  ~ header,
+  aside.right ~ footer,
+  aside.right ~ article,
+  aside.right ~ aside.features{
+      width: 70%;
+  }
+      
+      section.main > aside.right{
+        float:right;
+        width: 20%;
+        padding: 2.5%;
+        height: auto;
+        }
+      article{
+        padding: 2.5%;
+        background: rgba(150, 150, 175,.5);
+        float:left;
+        width: auto;
+        margin: 1em 0;
+        
+        }
+        .features > article.module{
+          float:left;
+          margin: 0 1.25;
+          }
+          .features > article.module:only-child{
+            width: 90%;
+            float:right
+            }
+            .features > article.module:first-child:not(:only-child){
+              width:40%;
+              }
+            .features > article.module:last-child:nth-child(2){
+              width: 40%;
+              float:right;
+              }
+              .features >
+    </style>
+  </head>
+  <body>
+    <div id="page">
+  <section class="side">
+    <nav>
+      <p>left nav</p>
+    </nav>
+    <article>
+      side article
+    </article>
+  </section>
+  <section class="main">
+      <aside class="right">
+      <h1>the Aside</h1>
+          <article>
+        <h2>article four</h2>
+    </article>
+    </aside>
+    <header>
+      <h1>Title of the page</h1>
+      <h2>i.e. the section header</h2>
+    </header>
+    <article>
+      <h2>article one</h2>
+    </article>
+    
+    <article>
+      <h2>article two</h2>
+    </article>
+    <article>
+        <h2>article three</h2>
+    </article>
+        <article>
+        <h2>article three</h2>
+    </article>
+    <aside class="features">
+    <article class="module">
+      module
+    </article>
+        <article class="module">
+      module
+    </article>
+
+    </aside>
+    <footer>
+    <h2>section cotnent footer</h2>
+    </footer>
+
+  </section>
+
+
+</div>
+
+
+<header>
+<hgroup>
+<h1>title of the site</h1>
+
+</hgroup>
+<nav class="utility">
+  <ul>
+    <li>one
+    <li>Two
+    <li>Three
+  </ul>
+</nav>
+<nav class="primary">
+<ul>
+  <li>one
+  <li>Two
+  <li>Three
+  <li>Four
+  <li>five
+</ul>
+</nav>
+</header>
+<footer>
+footer
+</footer>
+  </body>
+</html>
