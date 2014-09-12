@@ -16,6 +16,9 @@ module.exports = function(grunt) {
         },
         files : {
           'public/assets/css/cmsputty.standard.css' : ['private/css/standard.main.styl' ],
+          'public/assets/css/cmsputty.brand.css': ['private/css/001-brand/index.styl'],
+          'public/assets/css/cmsputty.layout.css' :['private/css/002-layout/index.styl'],
+          'public/assets/css/cmsputty.components.css' : ['private/css/003-components/index.styl']
         }
       },
       standardProd:{
@@ -30,6 +33,9 @@ module.exports = function(grunt) {
         },
         files : {
           'public/assets/css/cmsputty.standard.css' : ['private/css/standard.main.styl' ],
+          'public/assets/css/cmsputty.brand.css': ['private/css/001-brand/index.styl'],
+          'public/assets/css/cmsputty.layout.css' :['private/css/002-layout/index.styl'],
+          'public/assets/css/cmsputty.components.css' : ['private/css/003-components/index.styl']
         }
       },
       flex:{
