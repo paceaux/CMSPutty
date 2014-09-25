@@ -7,11 +7,16 @@
 <body>
 	<!--Global Header  -->
 	<header class="header header--global ">
-		<div class="header__hgroup">
+		<div class="header__hgroup hgroup hgroup--left">
 			<h1 class="header__hgroup__title">CMSputty
 			</h1>
 			<h2 class="header__hgroup__subtitle">Templating for any CMS</h2>
 		</div>
+	<form class="header__form form form--search form--right">
+		<input class="form__input form__input--search" type="search" placeholder="search" id="header__search"/>
+		<button class="form__button form__button--go">go</button>
+
+	</form>
 	<nav class="header__nav nav nav--horizontal">		
 		<ul class="nav__list list list--unordered">
 			<li class="list__item">
@@ -34,9 +39,6 @@
 	</header>
 	<!-- Content Regions-->
 	<main class="main main--global">
-		<header class="main__header">
-			
-		</header>
 		<!-- Optional Sidebar-->
 		<aside class="main__sidebar sidebar sidebar--left">
 			<h2 class="sidebar__title title">Sidebar
@@ -57,8 +59,17 @@
 			<!-- OPtional Sidebar-->
 			<aside class="page__sidebar sidebar sidebar--right">
 				<h2 class="sidebar__title">
-					Sidebar with Content
+					Sidebar with articles
 				</h2>
+				<article class="article article--imgTeaser" itemscope itemtype="article">
+					<h2 class="article__title">Small Article</h2>
+					<figure class="article__figure">
+						<img class="article__figure__image" src="http://placekitten.com/120/120" alt="adorable kitten" title="adorable kitten" />
+						<figcaption class="article__figure__caption">
+							<p itemprop="headline">Kittens are adorable</p>
+						</figcaption>
+					</figure>
+				</article>
 			</aside>
 			<!--/optional sidebar-->
 			<!--Content Region -->
@@ -66,20 +77,34 @@
 				<h2 class="content__title">
 					Here be the main page
 				</h2>
-				<article class="article">
+				<!--Article Component -->
+				<article class="article article--detail" itemscope itemtype="article">
 					<header class="article__header header">
-						<h2 class="header__title">This is an ARticle</h2>
-						<h3 class="header__subtitle">It has content</h3>
+						<h2 class="header__title" itemprop="headline">A Bacon Article</h2>
+						<h3 class="header__subtitle" itemprop="about">Made with bacon</h3>
+						<small class="header__author" itemprop="author">Frank M. Taylor</small>
+						<time datetime="2014-9-20 19:00">September 20th</time>
 					</header>
-					<section class="article__content">
-						<p>This is the article's content</p>
+					<section class="article__content" itemprop="articleBody">
+						<p>Bacon ipsum dolor sit amet pork chop spare ribs beef meatball t-bone rump shank hamburger. Doner corned beef turducken, short loin tongue pork belly filet mignon ground round fatback brisket jerky salami pork chop bresaola flank. Rump biltong shoulder t-bone. Fatback leberkas swine prosciutto kielbasa salami boudin turducken rump bresaola pastrami biltong ground round kevin. Ham hock fatback kevin sirloin short loin tongue brisket landjaeger chuck chicken cow biltong turkey.
+
+						</p>
+						<p>
+						Tenderloin jerky filet mignon pork rump strip steak. Bresaola frankfurter sausage drumstick, rump pork belly leberkas capicola shank ham pig. Boudin cow pork loin tri-tip leberkas rump. Jowl pork belly ham hock pig doner, kielbasa porchetta turducken rump salami. Meatloaf capicola jowl, porchetta pork loin spare ribs t-bone ham hock sirloin doner. Venison pork kielbasa salami short ribs filet mignon tri-tip fatback.
+
+						</p>
 					</section>
+					<footer class="article__footer footer">
+						<small>This article was written by some guy</small>
+						<p>Learn more about him  <a href="#">right here</a></p>
+					</footer>
 				</article>
+				<!-- /article component -->
 			</section>
 		</section>
 	</main>
 	<!-- Global Footer-->
-	<footer class="footer footer--global">
+	<footer class="footer footer--global footer--clear">
 		<h2 class="footer__title">CMSPutty</h2>
 		<nav class="footer__nav nav nav--horizontal">
 		<ul class="nav__list list">
