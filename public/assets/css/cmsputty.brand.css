@@ -1,5 +1,5 @@
 
-/* line 7 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/standard.main.styl */
+/* line 7 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/index.styl */
 
 /* line 1 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/stylus/lib/functions/index.styl */
 
@@ -65,7 +65,7 @@
 
 /* line 226 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
 
-/* line 14 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/index.styl */
+/* line 29 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/index.styl */
 
 /* line 14 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/index.styl */
 
@@ -85,7 +85,7 @@
 
 /* line 197 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/flex.styl */
 
-/* line 92 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/gradients.styl */
+/* line 29 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/gradients.styl */
 
 /* line 92 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/gradients.styl */
 
@@ -113,7 +113,7 @@
 
 /* line 79 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/reset.styl */
 
-/* line 6 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/text/index.styl */
+/* line 29 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/text/index.styl */
 
 /* line 6 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/text/index.styl */
 
@@ -147,11 +147,7 @@
 
 /* line 574 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/size.styl */
 
-/* line 29 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/size.styl */
-
-/* line 9 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/index.styl */
-
-/* line 9 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/index.styl */
+/* line 9 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/node_modules/nib/lib/nib/size.styl */
 
 /* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/000-reset.styl */
 
@@ -775,237 +771,3 @@ button:focus,
 /* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/007-forms.styl */
 
 /* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 31 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/008-SRP.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/index.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/index.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-
-/* line 1 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-[class*="horizontal"] .list__item {
-  float: left;
-  margin: 0 1.618em 0 0;
-}
-
-/* line 6 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-.hidden {
-  display: none;
-}
-
-/* line 8 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-.invisible {
-  visibility: hidden;
-  text-indent: -9999em;
-}
-
-/* line 11 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-[class*="--stretchScreen"][class*="--stretchScreen"] {
-  width: 100%;
-  margin: 0;
-}
-
-/* line 14 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-[class*="--left"] {
-  float: left;
-}
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-[class*="--right"] {
-  float: right;
-}
-
-/* line 18 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/001-core.styl */
-[class*="--clear"] {
-  clear: both;
-}
-
-/* line 20 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-
-/* line 1 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-html {
-  width: 100%;
-}
-
-/* line 3 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-/* line 10 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-
-/* line 7 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.footer--global,
-.main--global,
-.header--global {
-  width: 60em;
-  width: 61.8vw;
-  margin: 0 auto;
-  margin: 0 auto;
-}
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-.sidebar {
-  width: 20%;
-}
-
-/* line 19 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-.main {
-  min-height: 20rem;
-  min-height: 61.8vh;
-}
-
-/* line 24 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/002-global.styl */
-.footer {
-  min-height: 5em;
-}
-
-/* line 26 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/003-header.styl */
-
-/* line 1 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/003-header.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.header__nav {
-  height: 2.5em;
-}
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/004-nav.styl */
-
-/* line 1 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/004-nav.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.nav__list {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 5 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/004-nav.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.nav .list__item__link {
-  display: block;
-  padding: 0.618em;
-}
-
-/* line 31 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/004-nav.styl */
-
-/* line 10 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-default/index.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-flex/index.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/001-flex/004-nav.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/002-tablet/index.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 10 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/002-layout/003-desktop/index.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/003-components/index.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/003-components/index.styl */
-
-/* line 16 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/001-brand/004-sidebar.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/003-components/001-article.styl */
-
-/* line 2 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/003-components/002-editor.styl */
-
-/* line 1 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/003-components/002-editor.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.explorer__editor__form {
-  padding: 0.618em;
-  background: #efefef;
-}
-
-/* line 7 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/003-components/002-editor.styl */
-.editForm {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-lines: single;
-  -moz-box-lines: single;
-  -o-box-lines: single;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding: 0.618em;
-}
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.editForm__title {
-  font-size: 1.25em;
-  padding: 0.618em;
-  width: 100%;
-  margin: 1.618rem 0;
-}
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.editForm__text {
-  padding: 0.618rem;
-  min-height: 15em;
-  width: 100%;
-}
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.editForm__inputs {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -o-box-flex: 1;
-  -ms-box-flex: 1;
-  box-flex: 1;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
-}
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.editForm__controls {
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
-  -o-box-flex: 0;
-  -ms-box-flex: 0;
-  box-flex: 0;
-  -webkit-flex-grow: 0;
-  flex-grow: 0;
-}
-
-/* line 4 : /Users/franktaylor/Dropbox/Google Drive/Web Pieces/CMSPutty/private/css/vars.styl */
-.editForm__tags {
-  background: #e9e9e9;
-}

@@ -39,10 +39,14 @@ The Modifier is a change to the original state. We indicate this by adding the b
 </header>
 
 ````
-#### CMSPutty's flavor of BEM
-CMSPutty uses a slight twist on BEM, which we call "Hybrid BEM". Another way to describe it is that we 'reset blocks. What we do is add both an element class and a block class. A good case for this is navigations and lists. 
+#### Hybrid BEM
+CMSPutty uses a slight twist on BEM, which we call "Hybrid BEM". Another way to describe it is that we 'reset blocks'. All this means is that an element can also be a block. 
 
-Here, we have a `header__nav`, and also a `nav`. And the list is a `nav__list` and also a `list`. 
+Here, we have a `header__nav` which is an element within the header. So we know that this particular navigation is meant for the header. 
+
+We also see that it's a `nav`, so we know that it is also its own unique block. 
+
+We then see that the list inside is a `nav__list`, meaning that it's a list specific to the context of a navigation. But we also see that this is also a `list`, meaning that it's a list block which could be used anywhere. 
 ````
 	<nav class="header__nav nav nav--horizontal">
 		<ul class="nav__list list">
@@ -52,5 +56,9 @@ Here, we have a `header__nav`, and also a `nav`. And the list is a `nav__list` a
 ````
 
 
+#### Why BEM is being used
+* Synchronicity with the CMS. BEM allows us to create a class-naming system that can synchronize the back-end with the front-end. We can see from something like `article__title` that this is the article schema and the title field. 
+* Highly specific class names. BEM creates class names that can be as specific as an ID. Something like `header__hgroup__title` isn't likely going to be used anywhere else, so you get the uniqueness of an ID without using an ID. 
+* 
 
 
