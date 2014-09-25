@@ -73,6 +73,7 @@ pt36 = 3em
 
 bodyFont = sans-serif
 codeFont = "Courier New", Courier, monospace;
+
 font-size(arg)
 	if arg == 1em
 		font-size: 1em
@@ -80,12 +81,23 @@ font-size(arg)
 	else
 		font-size: arg
 
+/*Color Vars*/
+neutralLightest = #ebebeb
+neutralDarkest = #646464
+warmDarkest = #323f50
+warmLight = #f0e92b
+warmLightest = #ffde66
+coolLighter = #a7dbd8
+coolBrighter = #057AA8
+coolDarker = #323f50
+coolDarkest = #144b7e
+
 
 //===base colors
-htmlBG = rgb(230, 230, 230)
-bodyTxt = rgb(51, 51, 51)
-txtLink = #00a1de
-txtLinkHover = #0071b8
+htmlBG = neutralLightest
+bodyTxt = neutralDarkest
+txtLink = coolBrighter
+txtLinkHover = saturate(txtLink, 20%)
 
 //=== base font
 bodyFont = 'Open Sans', sans-serif
@@ -100,23 +112,22 @@ makeTransparent(theColor)
 
 //=== text colors
 
-txtLink = #b10a32
-txtLinkHover = #333
-txtLinkActive = #333
-h1Color = rgba(0, 0, 0, .63)
+txtLinkHover = saturate(txtLink, 20%)
+txtLinkActive = saturate(txtLink, 20%)
+h1Color = coolDarker
 h3Color = #556159
 
 //=== form colors
-inputBorder = .125em solid rgba(4, 124, 192, 1)
-inputHoverBorder = rgba(5, 154, 240,1)
+inputBorder = .125em solid coolDarker
+inputHoverBorder = saturate(coolDarker, 20%)
 inputBackground = white
-inputColor = liteGray
-inputHoverColor = medGray1
-inputActiveColor = txtBodyBlack
+inputColor = warmDarkest
+inputHoverColor = lighten(inputColor, 20%)
+inputActiveColor = darken(inputColor, 10%);
 buttonColor = white
-buttonBorder = .125em solid rgba(4, 124, 192, 1)
-buttonBackground = rgb(4, 124, 192)
-buttonHoverBackground = rgb(5, 154, 240)
+buttonBorder = .125em solid coolDarker
+buttonBackground = coolDarker
+buttonHoverBackground = lighten(coolDarker, 20%)
 
 
 
@@ -126,7 +137,7 @@ goBackgroundHover = saturate(goBackground, 20%)
 goColor = #523E31
 
 //=== table colors
-tableBorder = gray
+tableBorder = neutralDarkest
 tableBodyBackground = rgb(240, 245, 235)
 tableRowEven = rgba(240, 245, 235, .9)
 tableRowOdd = rgba(255, 255, 255, .5)
